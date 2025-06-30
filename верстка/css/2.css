@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    width: 100;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header > .container {
+    padding: 40px 20px;
+}
+
+img {
+    width: 100px;
+}
+
+header .container .menu a {
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #4b4b4e;
+    margin: 0 20px;
+}
+
+header .container .menu a:hover,
+header .container .menu a:active { 
+    color: #f00;
+    font-weight: rgba(235, 7, 7, 0.712);
+    padding-bottom: 7px;
+    border-bottom: 3px solid rgb(240, 7, 7);
+}

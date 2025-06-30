@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/createcard.css">
+</head>
+<body>
+
+<h1>Создать новую карточку книги</h1>
+
+<form action="/submit_card" method="POST">
+  
+<label for="author">Автор книги:</label>
+<input type="text" id="author" name="author" required />
+
+<label for="title">Название книги:</label>
+<input type="text" id="title" name="title" required />
+
+<div class="radio-group">
+<p>Готов поделиться</p>
+<label><input type="radio" name="share" value="yes" required /> Да</label><br/>
+<label><input type="radio" name="share" value="no" /> Нет</label>
+</div>
+
+<div class="radio-group">
+<p>Хочу в свою библиотеку</p>
+<label><input type="radio" name="library" value="yes" required /> Да</label><br/>
+<label><input type="radio" name="library" value="no" /> Нет</label>
+</div>
+
+<button type="submit">Создать карточку</button>
+
+</form>
+</body>
+</html>

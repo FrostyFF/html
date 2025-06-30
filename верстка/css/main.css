@@ -1,0 +1,31 @@
+.block1 .menu {
+    width: 260px;
+}
+.block1 .menu a {
+    display: block;
+    text-decoration: none;
+    color: rgba(53, 49, 49, 0.623);
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    padding: 12px 25px;
+}
+
+.block1 .menu a:hover,
+.block1 .menu a.active {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.block1 .items .sort p {
+    color: orange;
+    font-size: 1.125em;
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.block1 {
+    justify-content: left;
+    align-items: flex-start;
+}
