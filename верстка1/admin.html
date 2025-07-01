@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>Панель администратора</title>
+</script>
+</head>
+<body>
+<h1>Панель администратора</h1>
+<table>
+<tr>
+<th>ID</th>
+<th>Автор книги</th>
+<th>Название книги</th>
+<th>Статус</th>
+<th>Действия</th>
+</tr>
+<tr id="row-101">
+<td>101</td>
+<td>Иван Иванович Иванов</td>
+<td>Мастер и Маргарита</td>
+<td class="status">На модерации</td>
+<td class="actions">
+<button onclick="публиковать(101)">Опубликовать</button>
+<button onclick="отклонить(101)">Отклонить</button>
+</td>
+</tr>
+<tr id="row-102">
+<td>102</td>
+<td>Петр Петрович Петров</td>
+<td>Война и мир</td>
+<td class="status">Отклонена (причина)</td>
+<td></td>
+</tr>
+<tr id="row-103">
+<td>103</td>
+<td>Мария Ивановна Смирнова</td>
+<td>Анна Каренина</td>
+<td class="status">Опубликована</td>
+<td></td></tr>
+<tr id="row-104">
+<td>104</td>
+<td>Алексей Сергеевич Кузнецов</td>
+<td>Обломов</td>
+<td class="status">Архивная</td>
+<td></td></tr>
+</table>
+</body>
+</html>

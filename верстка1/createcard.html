@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Форма добавления карточки книги</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<h2>Добавить карточку книги</h2>
+
+<form id="bookForm" action="submit.php" method="POST">
+  
+  <label for="author">Автор книги <span style="color:red;">*</span></label>
+  <input type="text" id="author" name="author" required />
+
+  <label for="title">Название книги <span style="color:red;">*</span></label>
+  <input type="text" id="title" name="title" required />
+
+  <div class="radio-group">
+    <p><strong>Действие:</strong></p>
+    
+    <label>
+      <input type="radio" name="action" value="share" required />
+      Готов поделиться
+    </label>
+    
+    <label>
+      <input type="radio" name="action" value="library" required />
+      Хочу в свою библиотеку
+    </label>
+  </div>
+  <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
